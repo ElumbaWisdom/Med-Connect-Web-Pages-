@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>🏥 Patient Registration</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full legal name">
+                <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 555-5555">
+                <div class="error-message" id="phoneError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <div class="error-message" id="dobError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select --</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                    <option value="prefer_not_to_say">Prefer not to say</option>
+                </select>
+                <div class="error-message" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Full Address:</label>
+                <input type="text" id="address" name="address" required
+                    placeholder="Street, City, State/Region, Zip/Postal Code">
+                <div class="error-message" id="addressError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="••••••••">
+                <small>Must be 8+ characters, include a number and a symbol.</small>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+
+            <button type="submit" id="registerButton" onclick="registerMsg()" class="btn btn-success">Register</button>
+
+            <p id="formMessage" class="feedback-message"></p>
+        </form>
+
+        <div class="login-prompt">
+            Already have an account? <a
+                href="c:\Users\Administrator\Desktop\CEF 345-Project Presentation\Med-Connect\Web Page\Login.html">Log
+                In here</a>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

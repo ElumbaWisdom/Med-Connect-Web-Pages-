@@ -1,0 +1,138 @@
+/* --- Global Styles and Page Layout --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef; /* Light gray background for a clean look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    /* Card-like container for the form */
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Limits the width for readability */
+}
+
+/* --- Typography --- */
+h2 {
+    text-align: center;
+    color: #007bff; /* Primary medical blue color */
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* --- Form Groups and Inputs --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+small {
+    display: block;
+    color: #6c757d;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* --- Feedback Messages (Errors and Success) --- */
+.error-message {
+    color: #dc3545; /* Red for errors */
+    font-size: 0.85em;
+    margin-top: 5px;
+    height: 1.2em; /* Reserve space to prevent layout jump */
+}
+
+.feedback-message {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Specific styles for success/error messages added by JS */
+.feedback-message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* --- Button Styles --- */
+#registerButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#registerButton:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#registerButton:disabled {
+    background-color: #a0c3e8;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* --- Footer Prompt --- */
+.login-prompt {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.login-prompt a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
